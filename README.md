@@ -19,6 +19,11 @@ You can copy `SImpleDraggable.js` into your project.
 
 ## API
 
+### Usage
+Make sure that your element has the position of absolute or fixed.
+- with `position: absolute;` the element can be dragged all the way to the bottom
+- with `position: fixed;` the element will stop at the borders of the viewport
+
 ### `new SimpleDraggable(id, dragElement, element, store = false, enabled = true)`
 
 - `id` (string): Unique identifier for storing position in localStorage.
