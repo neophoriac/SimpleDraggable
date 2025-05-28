@@ -285,7 +285,7 @@ class SimpleDraggable {
     /**
      * Removes all event listeners added by this instance.
      */
-    removeListeners() {
+    _removeListeners() {
         this.dragElement.removeEventListener('mousedown', this._boundMouseDown);
         window.removeEventListener('storage', this._boundStorage);
         window.removeEventListener("mousemove", this._boundDrag);
@@ -297,7 +297,7 @@ class SimpleDraggable {
      */
     stop() {
         if (!this.enabled) return;
-        this.removeListeners();
+        this._removeListeners();
         this.element.dataset.translate = `{"x":0,"y":0}`;
         this.enabled = false;
     }

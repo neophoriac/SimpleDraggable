@@ -24,7 +24,8 @@ Make sure that your element has the position of absolute or fixed.
 - with `position: absolute;` the element can be dragged all the way to the bottom
 - with `position: fixed;` the element will stop at the borders of the viewport
 
-### `new SimpleDraggable(id, dragElement, element, store = false, enabled = true)`
+initializing an instance with:
+`new SimpleDraggable(id, dragElement, element, store = false, enabled = true)`
 
 - `id` (string): Unique identifier for storing position in localStorage.
 - `dragElement` (HTMLElement): The element that acts as the drag handle.
@@ -36,7 +37,6 @@ Make sure that your element has the position of absolute or fixed.
 
 - `start()`: Enables dragging and restores position.
 - `stop()`: Disables dragging and resets position.
-- `removeListeners()`: Removes all event listeners added by this instance.
 
 ## Example
 
