@@ -2,7 +2,7 @@
 
 SimpleDraggable is a lightweight JavaScript class for making DOM elements draggable using transformations with minimal setup and no dependencies.
 
-Basically, if you want a simple tool to drag elements and sync their position across tabs, use this
+Basically, if you want a simple tool to drag elements and sync their position across tabs, use this.
 
 ## Features
 
